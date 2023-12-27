@@ -7,7 +7,7 @@ if (localStorage.getItem("userLogged")){
 
     document.getElementById("signoutBtn").addEventListener("click", function(){
         localStorage.removeItem("userLogged");
-        window.location.replace("/index.html");
+        window.location.replace("https://aazs-edu.github.io/login-system/index.html");
     })
 }
 else{
@@ -20,12 +20,12 @@ else{
         confirmButtonText: "Sign in",
       }).then((result) => {
         if (result.isConfirmed) {
-          window.location.replace("/index.html");
+          window.location.replace("https://aazs-edu.github.io/login-system/index.html");
         }
       });
     
       setTimeout(() => {
-        window.location.replace("/index.html");
+        window.location.replace("https://aazs-edu.github.io/login-system/index.html");
       }, 2000);
 }
 

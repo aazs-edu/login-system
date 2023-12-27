@@ -48,7 +48,7 @@ function adduser(){
       position: "top",
     });
     setTimeout(() => {
-      window.location.replace("/index.html");
+      window.location.replace("https://aazs-edu.github.io/login-system/index.html");
     }, 1000);
   }
   else {

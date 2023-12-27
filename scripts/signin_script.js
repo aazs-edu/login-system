@@ -37,7 +37,7 @@ function userSignin(){
     });
     localStorage.setItem("userLogged", `${userInfo[0].userName}`);
     setTimeout(() => {
-      window.location.replace("/home.html");
+      window.location.replace("https://aazs-edu.github.io/login-system/home.html");
     }, 1000);
   }
   else {
