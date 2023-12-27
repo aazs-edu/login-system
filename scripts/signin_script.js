@@ -77,11 +77,6 @@ function validate(element){
           element.classList.remove("is-valid");
         }
       }
-      else{
-        document.getElementById("invalidPasswordFeedback").innerHTML = "Enter Valid Email First"
-        element.classList.add("is-invalid");
-        element.classList.remove("is-valid");
-      }
     }  
 }
 
@@ -93,5 +88,7 @@ userPasswordInput.addEventListener("input", function () {
 });
 
 function checkValidate(){
+  validate(userEmailInput);
+  validate(userPasswordInput);
   return InputsList.every(input => input.classList.contains("is-valid"));
 }
