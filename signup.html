@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <!-- Template Css File -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <section class="pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="w-75 mx-auto">
+            <div>
+              <div class="inputs-box bg-body-tertiary p-3 rounded-4 shadow-sm">
+                <h3 class="text-center mb-4 fs-2">Smart Login System</h3>
+
+                <div class="col-sm-12 form-floating mb-3">
+                  <input type="text" id="userName" class="form-control" placeholder="Enter Your Name">
+                  <label for="userName" class="form-label">Name</label>                  
+                  <div class="invalid-feedback">Minimum 3 characters, start with at least two letters</div>                  
+                </div>
+                
+                <div class="col-sm-12 form-floating mb-3">
+                  <input type="email" id="userEmail" class="form-control" placeholder="Enter Your Email">
+                  <label for="userEmail" class="form-label">Email</label>                  
+                  <div class="invalid-feedback" id="invalidEmailFeedback">Your email must be in the format user@example.com</div> 
+                </div>
+
+                <div class="col-sm-12 form-floating mb-3">
+                  <input type="password" id="userPassword" class="form-control" placeholder="Enter Your Password">
+                  <label for="userPassword" class="form-label">Password</label>                  
+                  <div class="invalid-feedback">Minimum 8 characters, at least one letter and one number</div> 
+                </div>
+
+                <button id="signupBtn" type="submit" class="btn btn-info w-100 mb-4">Sign up</button>
+
+                <p class="text-center">Already have an account? <a href="index.html" class="text-decoration-none">Sign in</a></p>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <!-- Include SweetAlert from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Template JS File -->
+    <script src="scripts/signup_script.js"></script>
+  </body>
+</html>
